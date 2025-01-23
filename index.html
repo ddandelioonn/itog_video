@@ -23,23 +23,24 @@
       id="scene"
     >
       <a-assets>
-        <a-asset-item
-          id="bowser"
-          src="moai.glb"
-        >
-        </a-asset-item>
+        <video
+          id="glav-video"
+          src="glav.mp4"
+          autoplay
+          loop
+          crossorigin="anonymous"
+        ></video>
       </a-assets>
 
-      <a-entity
+      <a-video
         gps-entity-place="latitude: 56.88706; longitude: 60.58664;"
-        id="bowser-model"
-        gltf-model="#bowser"
+        src="#glav-video"
         position="0 0 -5"
-        scale="0.5 0.5 0.5"
+        scale="4 2 1"
         class="clickable"
         gesture-handler
       >
-      </a-entity>
+      </a-video>
 
       <a-entity gps-camera rotation-reader></a-entity>
     </a-scene>
