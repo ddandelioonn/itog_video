@@ -29,18 +29,20 @@
           autoplay
           loop
           crossorigin="anonymous"
+          playsinline
+          muted
         ></video>
       </a-assets>
 
       <a-video
         gps-entity-place="latitude: 56.88706; longitude: 60.58664;"
         src="#glav-video"
-        position="0 0 -5"
+        position="0 1.5 -5"
         scale="4 2 1"
+        rotation="0 0 0"
         class="clickable"
         gesture-handler
-      >
-      </a-video>
+      ></a-video>
 
       <a-entity gps-camera rotation-reader></a-entity>
     </a-scene>
